@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.75"
+            android:text="Medio Transporte"
+
+            android:textColor="@android:color/background_light"
+            android:textSize="12sp" />
+
+        <Spinner
+
+
+            android:id="@+id/spnMedioViaje"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="10dp"
+
+            android:layout_weight="2"
+            android:alpha="0.25"
+            android:background="@color/cardview_light_background" />
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+
+            android:layout_weight="1.75"
+            android:text="Tiempo (Minutos)"
+            android:textColor="@android:color/background_light"
+            android:textSize="12sp" />
+
+        <Spinner
+
+
+            android:id="@+id/spnTiempoViaje"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+
+            android:layout_weight="1"
+            android:alpha="0.25"
+            android:background="@color/cardview_light_background" />
+
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+
+            android:layout_weight="1.5"
+            android:text="Costo (Soles)"
+            android:textColor="@android:color/background_light"
+            android:textSize="12sp" />
+
+        <Spinner
+
+            android:id="@+id/spnCostoViaje"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:alpha="0.25"
+            android:background="@color/cardview_light_background" />
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+
+        <!-- cambio 10 (final) -->
+
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+
+            android:gravity="center_vertical"
+            android:text="Transbordo"
+            android:textColor="@android:color/background_light"
+            android:textSize="12sp"
+
+            android:visibility="gone" />
+
+        <Spinner
+
+            android:id="@+id/spnTransbordo"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:alpha="0.25"
+            android:background="@color/cardview_light_background"
+
+            android:visibility="gone" />
+
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="bottom|center_vertical"
+            android:layout_marginTop="20dp"
+            android:layout_weight="0.75"
+            android:text="Número"
+            android:textColor="@android:color/background_light"
+            android:textSize="12sp"
+
+            android:visibility="gone" />
+
+        <Spinner
+
+            android:id="@+id/spnNumeroTransbordo"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.75"
+            android:alpha="0.25"
+            android:background="@color/cardview_light_background"
+
+            android:visibility="gone" />
+
+
+        <Button
+            android:id="@+id/btnEliminarViaje"
+            style="@android:style/Widget.Holo.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Eliminar Registro" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

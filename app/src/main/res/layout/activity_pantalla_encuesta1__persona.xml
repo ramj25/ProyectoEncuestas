@@ -1,0 +1,758 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PantallaEncuesta1_Persona"
+    android:orientation="vertical"
+
+    android:descendantFocusability="beforeDescendants"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/texture"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/black"
+                android:text="Información de las Personas que componen el Hogar"
+                android:textColor="@android:color/background_light"
+                android:textSize="15sp"
+                app:fontFamily="monospace" />
+
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:text="Q8  Quisiera hacer una lista completa de todas las personas que viven habitualmente en este hogar y comparten sus comidas"
+                android:textColor="@android:color/background_light"
+                android:textSize="13sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Nombre"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/txtNombrePersona"
+                    style="@style/Widget.AppCompat.EditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:autoText="false"
+                    android:ems="10"
+                    android:freezesText="false"
+                    android:inputType="textPersonName"
+                    android:textAllCaps="false"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1.25"
+
+                    android:text="Q9 Relación de parentesco con el jefe"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp" />
+
+                <Spinner
+
+
+                    android:id="@+id/spnParentesco"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="10dp"
+
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1.25"
+                    android:alpha="0.25"
+                    android:background="@color/cardview_light_background" />
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.75"
+                    android:text="Q10 Género"
+
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp" />
+
+                <Spinner
+
+                    android:id="@+id/spnSexoPersona"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="5dp"
+
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.8"
+                    android:alpha="0.25"
+                    android:background="@color/cardview_light_background" />
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.75"
+                    android:text="Q11 Edad de la Persona"
+
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp" />
+
+                <Spinner
+
+
+                    android:id="@+id/spnEdadPersona"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="10dp"
+
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.8"
+                    android:alpha="0.25"
+                    android:background="@color/cardview_light_background" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+
+                    android:text="Q12 Tiene alguna Discapacidad"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp" />
+
+                <Spinner
+
+
+                    android:id="@+id/spnDiscapacidad"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="10dp"
+
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.75"
+                    android:alpha="0.25"
+                    android:background="@color/cardview_light_background" />
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="Q12a Necesita ayuda para viajar?"
+
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp" />
+
+                <Spinner
+
+                    android:id="@+id/spnAyudaViajar"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="5dp"
+
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.75"
+                    android:alpha="0.25"
+                    android:background="@color/cardview_light_background" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+                    android:layout_weight="1"
+                    android:text="Q13 ¿Cual es su ocupación actualmente?"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp" />
+
+                <Spinner
+
+
+                    android:id="@+id/spnOcupacion"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1.25"
+                    android:alpha="0.25"
+                    android:background="@color/cardview_light_background" />
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Q14 ¿A qué actividad se dedica el negocio, empresa u organismo en el que trabaja Ud.?"
+
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp" />
+
+                <Spinner
+
+                    android:id="@+id/spnActividad"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1.25"
+                    android:alpha="0.25"
+                    android:background="@color/cardview_light_background" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="0.75"
+
+                    android:text="Q15 Tiene Ud. Licencia de Conducir?"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp" />
+
+                <Spinner
+
+
+                    android:id="@+id/spnLicenciaConducir"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="10dp"
+
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.5"
+                    android:alpha="0.25"
+                    android:background="@color/cardview_light_background" />
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.75"
+
+                    android:text="Q16 ¿Cual es el operador de su celular?"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp" />
+
+                <Spinner
+
+
+                    android:id="@+id/spnOperadorCelular"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="10dp"
+
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.5"
+                    android:alpha="0.25"
+                    android:background="@color/cardview_light_background" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Status de Viaje"
+
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp" />
+
+                <Spinner
+
+
+                    android:id="@+id/spnStatusViaje"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1.5"
+                    android:alpha="0.25"
+                    android:background="@color/cardview_light_background" />
+
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+
+                android:visibility="gone">
+                <!-- cambio 5 -->
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Correo Electrónico"
+
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp" />
+
+
+                <EditText
+
+                    android:id="@+id/txtCorreoElectronicoPersona"
+                    style="@style/Widget.AppCompat.EditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+
+
+                    android:autoText="false"
+                    android:inputType="textPersonName"
+                    android:textAllCaps="false"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+
+            <!-- cambio 6 (hasta el final!) (10 gones)-->
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/black"
+                android:text="Centro de Trabajo"
+                android:textColor="@android:color/background_light"
+                android:textSize="14sp"
+                android:visibility="gone"
+
+                app:fontFamily="monospace" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+
+                android:visibility="gone">
+
+
+                <Button
+
+                    android:id="@+id/btnCoordenadasTrabajo"
+                    style="@android:style/Widget.Holo.Button.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Buscar Lugar en el Mapa" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+
+                android:visibility="gone">
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Distrito"
+
+                    android:textColor="@android:color/background_light"
+                    android:textSize="14sp" />
+
+                <Spinner
+
+                    android:id="@+id/spnDistritoCentroTrabajo"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="5dp"
+
+                    android:layout_weight="1.5"
+                    android:alpha="0.25"
+                    android:background="@color/cardview_light_background" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+
+                android:visibility="gone">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Dirección"
+                    android:textColor="@android:color/background_light" />
+
+                <EditText
+                    android:id="@+id/txtDireccionCentroTrabajo"
+                    style="@style/Widget.AppCompat.EditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:autoText="false"
+                    android:ems="10"
+                    android:freezesText="false"
+                    android:inputType="textPersonName"
+                    android:textAllCaps="false"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+
+                android:visibility="gone">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Referencia"
+                    android:textColor="@android:color/background_light" />
+
+                <EditText
+                    android:id="@+id/txtReferenciaCentroTrabajo"
+                    style="@style/Widget.AppCompat.EditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:autoText="false"
+                    android:ems="10"
+                    android:freezesText="false"
+                    android:inputType="textPersonName"
+                    android:textAllCaps="false"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@android:color/black"
+                android:text="Centro de Estudios"
+                android:textColor="@android:color/background_light"
+                android:textSize="14sp"
+                android:visibility="gone"
+
+                app:fontFamily="monospace" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+
+                android:visibility="gone">
+
+
+                <Button
+
+                    android:id="@+id/btnCoordenadasEstudio"
+                    style="@android:style/Widget.Holo.Button.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Buscar Lugar en el Mapa" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+
+                android:visibility="gone">
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Distrito"
+
+                    android:textColor="@android:color/background_light"
+                    android:textSize="14sp" />
+
+                <Spinner
+
+                    android:id="@+id/spnDistritoCentroEstudios"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="5dp"
+
+                    android:layout_weight="1.5"
+                    android:alpha="0.25"
+                    android:background="@color/cardview_light_background" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+
+                android:visibility="gone">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Dirección"
+                    android:textColor="@android:color/background_light" />
+
+                <EditText
+                    android:id="@+id/txtDireccionCentroEstudios"
+                    style="@style/Widget.AppCompat.EditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:autoText="false"
+                    android:ems="10"
+                    android:freezesText="false"
+                    android:inputType="textPersonName"
+                    android:textAllCaps="false"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+
+                android:visibility="gone">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Referencia"
+                    android:textColor="@android:color/background_light" />
+
+                <EditText
+                    android:id="@+id/txtReferenciaCentroEstudios"
+                    style="@style/Widget.AppCompat.EditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:autoText="false"
+                    android:ems="10"
+                    android:freezesText="false"
+                    android:inputType="textPersonName"
+                    android:textAllCaps="false"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:background="@android:color/black"
+                android:text="Viajes"
+                android:textColor="@android:color/background_light"
+                app:fontFamily="monospace" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="2"
+                    android:text="Crear un registro por cada viaje que haya realizado la persona. No crear registros de más. "
+                    android:textColor="@android:color/background_light"
+                    android:textSize="11dp"
+                    app:fontFamily="monospace" />
+
+
+                <Button
+                    android:id="@+id/btnCrearViaje"
+                    style="@android:style/Widget.Holo.Button.Small"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:text="Registrar Viaje" />
+
+            </LinearLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+
+                android:id="@+id/recViaje"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp" />
+
+
+        </LinearLayout>
+
+</ScrollView>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/black"
+        android:gravity="center_vertical|center_horizontal">
+
+        <Button
+            android:id="@+id/btnGuardarPersona"
+            style="@android:style/Widget.Holo.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Añadir Persona" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

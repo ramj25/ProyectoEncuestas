@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FechaActivity"
+    android:orientation="vertical">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorAccent"
+        android:orientation="vertical">
+
+        <DatePicker
+            android:id="@+id/pckFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"></DatePicker>
+
+
+        <TimePicker
+            android:id="@+id/pckHora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TimePicker>
+
+
+        <Button
+            android:id="@+id/btnSetFecha"
+            android:layout_width="match_parent"
+            android:text="Seleccionar Fecha y Hora"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</ScrollView>
+
+
+</LinearLayout>

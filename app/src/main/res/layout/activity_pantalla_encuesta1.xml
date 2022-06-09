@@ -1,0 +1,2166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/principal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:descendantFocusability="beforeDescendants"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+
+    android:orientation="vertical"
+    tools:context=".PantallaEncuesta1">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+
+
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:background="@drawable/texture"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/black"
+                android:textColor="@android:color/background_light"
+                android:textSize="16sp"
+                app:fontFamily="monospace" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+
+                >
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Número de Hogar"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/txtNumeroHogar"
+                    style="@style/Widget.AppCompat.EditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:autoText="false"
+                    android:ems="10"
+                    android:freezesText="false"
+                    android:inputType="textPersonName"
+
+
+                    android:textAllCaps="false"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:paddingBottom="10dp">
+
+                <Button
+                    android:id="@+id/btnFecha1"
+                    style="@android:style/Widget.Holo.Button.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Grabar\n Hora/Fecha\n Visita 1"
+                    android:textSize="12sp" />
+
+
+                <Button
+                    android:id="@+id/btnFecha2"
+                    style="@android:style/Widget.Holo.Button.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Grabar\n Hora/Fecha\n Visita 2"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/btnFecha3"
+                    style="@android:style/Widget.Holo.Button.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Grabar\n Hora/Fecha\n Visita 3"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+
+
+                    android:id="@+id/lblFecha1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12dp" />
+
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+
+
+                    android:id="@+id/lblFecha2"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12dp" />
+
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+
+
+                    android:id="@+id/lblFecha3"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12dp" />
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center">
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+
+                    android:text="Dominio/Distrito/Vivienda"
+                    android:textColor="@android:color/background_light" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:paddingBottom="10dp">
+
+
+                <Spinner
+                    android:id="@+id/spnDominio"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    android:alpha="0.25"
+
+                    android:background="@color/cardview_light_background" />
+
+                <Spinner
+                    android:id="@+id/spnDistrito"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    android:alpha="0.25"
+                    android:background="@color/cardview_light_background" />
+
+                <Spinner
+                    android:id="@+id/spnSegmento"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    android:alpha="0.25"
+                    android:background="@color/cardview_light_background"
+
+                    android:visibility="gone" />
+                <!-- cambio 1 -->
+                <Spinner
+                    android:id="@+id/spnVivienda"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    android:alpha="0.25"
+                    android:background="@color/cardview_light_background" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+
+                    android:text="Zona Censal"
+                    android:textColor="@android:color/background_light" />
+
+                <EditText
+
+
+                    android:id="@+id/txtZonaCensal"
+                    style="@style/Widget.AppCompat.EditText"
+                    android:layout_width="0dp"
+
+                    android:layout_height="wrap_content"
+
+
+                    android:layout_weight="1"
+                    android:autoText="false"
+                    android:enabled="false"
+                    android:inputType="textPersonName"
+                    android:textAllCaps="false"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="14sp" />
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+
+                    android:text="Manzana"
+                    android:textColor="@android:color/background_light" />
+
+                <EditText
+
+
+                    android:id="@+id/txtManzanaHogar"
+                    style="@style/Widget.AppCompat.EditText"
+                    android:layout_width="0dp"
+
+                    android:layout_height="wrap_content"
+
+
+                    android:layout_weight="1"
+                    android:autoText="false"
+                    android:enabled="false"
+                    android:inputType="textPersonName"
+                    android:textAllCaps="false"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+
+                android:visibility="gone">
+
+                <!-- cambio 14 ? (despues de zonas de transito, necesita validacion) -->
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+
+                    android:text="DNI Supervisor"
+                    android:textColor="@android:color/holo_red_dark" />
+
+                <EditText
+
+                    android:id="@+id/txtSupervisor"
+                    style="@style/Widget.AppCompat.EditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+
+
+                    android:autoText="false"
+                    android:inputType="textPersonName"
+                    android:textAllCaps="false"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="14sp" />
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+
+                    android:text="DNI Codificador"
+                    android:textColor="@android:color/holo_red_dark"
+
+                    android:visibility="gone" />
+
+                <EditText
+
+                    android:id="@+id/txtCodificador"
+                    style="@style/Widget.AppCompat.EditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+
+
+                    android:autoText="false"
+                    android:inputType="textPersonName"
+                    android:textAllCaps="false"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="14sp"
+
+                    android:visibility="gone" />
+
+                <!-- cambio 2 - con validacion -->
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center">
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+
+                    android:gravity="center_horizontal"
+                    android:text="Numero de Visita"
+                    android:textColor="@android:color/background_light" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:paddingBottom="10dp">
+
+
+                <RadioGroup
+                    android:id="@+id/rbgCodificador"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checkedButton="@+id/rbCodificador1"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbCodificador1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="1°" />
+
+                    <RadioButton
+                        android:id="@+id/rbCodificador2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="2°" />
+
+                    <RadioButton
+                        android:id="@+id/rbCodificador3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="3°" />
+                </RadioGroup>
+
+
+                <RadioGroup
+                    android:id="@+id/rbgSupervisor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:checkedButton="@+id/rbSupervisor1"
+                    android:orientation="horizontal"
+
+                    android:visibility="gone">
+
+                    <RadioButton
+                        android:id="@+id/rbSupervisor1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="1°" />
+
+                    <RadioButton
+                        android:id="@+id/rbSupervisor2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="2°" />
+
+                    <RadioButton
+                        android:id="@+id/rbSupervisor3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="3°" />
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/black"
+                android:text="Parte 1 - Información del Hogar"
+                android:textColor="@android:color/background_light"
+                app:fontFamily="monospace" />
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Q1 Nombre del Jefe de Hogar"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/txtNombreJefeHogar"
+                    style="@style/Widget.AppCompat.EditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:autoText="false"
+                    android:ems="10"
+                    android:freezesText="false"
+                    android:inputType="textPersonName"
+                    android:textAllCaps="false"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/black"
+                android:text="Q2 Dirección de la Vivienda"
+                android:textColor="@android:color/background_light"
+                app:fontFamily="monospace" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+
+                <Spinner
+
+                    android:id="@+id/spnTipoVia"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1.25"
+                    android:alpha="0.25"
+                    android:background="@color/cardview_light_background" />
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="Nombre Calle/Av.,Jr.,Psje."
+
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <EditText
+
+
+                    android:id="@+id/txtNombre_Calle"
+                    style="@style/Widget.AppCompat.EditText"
+                    android:layout_width="0dp"
+
+                    android:layout_height="wrap_content"
+
+
+                    android:layout_weight="1.5"
+                    android:autoText="false"
+                    android:inputType="textPersonName"
+                    android:textAllCaps="false"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="Puerta No."
+
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <EditText
+
+
+                    android:id="@+id/txtNumeroPuerta"
+                    style="@style/Widget.AppCompat.EditText"
+                    android:layout_width="0dp"
+
+                    android:layout_height="wrap_content"
+
+
+                    android:layout_weight="1.5"
+                    android:autoText="false"
+                    android:inputType="textPersonName"
+                    android:textAllCaps="false"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="14sp" />
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Interior"
+
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp" />
+
+                <EditText
+
+
+                    android:id="@+id/txtInterior"
+                    style="@style/Widget.AppCompat.EditText"
+                    android:layout_width="0dp"
+
+                    android:layout_height="wrap_content"
+
+
+                    android:layout_weight="1.5"
+                    android:autoText="false"
+                    android:inputType="textPersonName"
+                    android:textAllCaps="false"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Piso"
+
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp" />
+
+                <Spinner
+
+
+                    android:id="@+id/spnPiso"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:alpha="0.25"
+                    android:background="@color/cardview_light_background" />
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Etapa/Sector/Grupo"
+
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp" />
+
+                <EditText
+
+
+                    android:id="@+id/txtEtapa"
+                    style="@style/Widget.AppCompat.EditText"
+
+                    android:layout_width="0dp"
+
+
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:autoText="false"
+                    android:inputType="textPersonName"
+                    android:textAllCaps="false"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="14sp" />
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:text="Manzana"
+
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp" />
+
+                <EditText
+
+
+                    android:id="@+id/txtManzana"
+                    style="@style/Widget.AppCompat.EditText"
+
+                    android:layout_width="0dp"
+
+
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:autoText="false"
+                    android:inputType="textPersonName"
+                    android:textAllCaps="false"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Lote"
+
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp" />
+
+                <EditText
+
+
+                    android:id="@+id/txtLote"
+                    style="@style/Widget.AppCompat.EditText"
+
+                    android:layout_width="0dp"
+
+
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:autoText="false"
+                    android:inputType="textPersonName"
+                    android:textAllCaps="false"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="14sp" />
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1.2"
+
+                    android:text="Kilómetro"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp" />
+
+                <EditText
+
+
+                    android:id="@+id/txtKilometro"
+                    style="@style/Widget.AppCompat.EditText"
+
+                    android:layout_width="0dp"
+
+
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:autoText="false"
+                    android:inputType="textPersonName"
+                    android:textAllCaps="false"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="14sp" />
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Tel/Cel"
+
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+
+                    android:visibility="gone" />
+
+                <EditText
+
+
+                    android:id="@+id/txtTelCel"
+                    style="@style/Widget.AppCompat.EditText"
+
+                    android:layout_width="0dp"
+
+
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:autoText="false"
+                    android:inputType="textPersonName"
+                    android:textAllCaps="false"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="14sp"
+
+                    android:visibility="gone" />
+                <!-- cambio 3 - con validacion -->
+
+                <Spinner
+
+
+                    android:id="@+id/spnZonaTransito"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="2"
+                    android:alpha="0.25"
+                    android:background="@color/cardview_light_background"
+
+                    android:visibility="gone" />
+
+                <!-- cambio 11 -->
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+
+                <Button
+
+                    android:id="@+id/btnCoordenadasUbicacion"
+                    style="@android:style/Widget.Holo.Button.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Conseguir las Coordenadas de mi Ubicacion" />
+
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+
+
+                    android:id="@+id/lblCoordenadasUbicacion"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12dp" />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/black"
+                android:text="Q3 Nivel de Educación del Jefe de Hogar"
+                android:textColor="@android:color/background_light"
+                app:fontFamily="monospace" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp">
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:text="Nivel de Educación del jefe del hogar"
+
+                    android:textColor="@android:color/background_light"
+                    android:textSize="14sp" />
+
+
+                <Spinner
+
+
+                    android:id="@+id/spnNivelEducacion"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="2"
+                    android:alpha="0.25"
+                    android:background="@color/cardview_light_background" />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/black"
+                android:text="Q4 Número de residentes en la casa"
+                android:textColor="@android:color/background_light"
+                app:fontFamily="monospace" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/black"
+                android:text="Hombres:"
+                android:textColor="@android:color/background_light"
+                app:fontFamily="monospace" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+
+                    android:text="Menores entre 0 y 5 años"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp" />
+
+
+                <Spinner
+
+
+                    android:id="@+id/spnHombresMenores"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:alpha="0.25"
+                    android:background="@color/cardview_light_background" />
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="De 6 años y más"
+
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp" />
+
+
+                <Spinner
+
+
+                    android:id="@+id/spnHombresMayores"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:alpha="0.25"
+                    android:background="@color/cardview_light_background" />
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:text="Empleados del Hogar"
+
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp" />
+
+                <Spinner
+
+
+                    android:id="@+id/spnHombresEmpleados"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:alpha="0.25"
+                    android:background="@color/cardview_light_background" />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@android:color/black"
+                android:text="Mujeres:"
+                android:textColor="@android:color/background_light"
+                app:fontFamily="monospace" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp">
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+
+                    android:text="Menores entre 0 y 5 años"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp" />
+
+                <Spinner
+
+
+                    android:id="@+id/spnMujeresMenores"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:alpha="0.25"
+                    android:background="@color/cardview_light_background" />
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="De 6 años y más"
+
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp" />
+
+                <Spinner
+
+
+                    android:id="@+id/spnMujeresMayores"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:alpha="0.25"
+                    android:background="@color/cardview_light_background" />
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:text="Empleadas del Hogar"
+
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp" />
+
+                <Spinner
+
+
+                    android:id="@+id/spnMujeresEmpleadas"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:alpha="0.25"
+                    android:background="@color/cardview_light_background" />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@android:color/black"
+                android:text="Q5 Condición de la vivienda"
+                android:textColor="@android:color/background_light"
+                app:fontFamily="monospace" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1.75"
+
+                    android:text="Q5a Régimen de Tenencia"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp" />
+
+                <Spinner
+
+
+                    android:id="@+id/spnRegimenTenencia"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="2"
+                    android:alpha="0.25"
+                    android:background="@color/cardview_light_background" />
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="Q5b Tipo de Vivienda"
+
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp" />
+
+                <Spinner
+
+                    android:id="@+id/spnTipoVivienda"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="2"
+                    android:alpha="0.25"
+                    android:background="@color/cardview_light_background" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.7"
+
+                    android:text="Q5c Número de Habitaciones"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp" />
+
+                <Spinner
+
+
+                    android:id="@+id/spnNumeroHabitaciones"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:alpha="0.25"
+                    android:background="@color/cardview_light_background" />
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.6"
+                    android:text="Q6 ¿A cuanto asciende el Ingreso Mensual del hogar? (Soles)"
+
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp" />
+
+
+                <Spinner
+
+
+                    android:id="@+id/spnIngresoMensual"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1.8"
+                    android:alpha="0.25"
+                    android:background="@color/cardview_light_background" />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@android:color/black"
+                android:text="Q7 Tenencia de Vehículos"
+                android:textColor="@android:color/background_light"
+                app:fontFamily="monospace" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:text="Crear registros de todos los vehículos de todos los tipos, con la antigüedad en años de cada uno. No crear registros de más."
+                    android:textColor="@android:color/background_light"
+                    android:textSize="10dp"
+                    app:fontFamily="monospace" />
+
+
+                <Button
+                    android:id="@+id/btnCrearRegistro"
+                    style="@android:style/Widget.Holo.Button.Small"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:text="Crear Registro" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="Tipo Vehículo"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp"
+                    app:fontFamily="monospace" />
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="Antigüedad"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp"
+                    app:fontFamily="monospace" />
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp"
+                    app:fontFamily="monospace" />
+
+
+            </LinearLayout>
+
+
+
+
+
+            <android.support.v7.widget.RecyclerView
+
+                android:id="@+id/recRegistro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Otro vehículo (Especificar)"
+                    android:textColor="@android:color/background_light" />
+
+                <EditText
+
+                    android:id="@+id/txtOtroVehiculo"
+                    style="@style/Widget.AppCompat.EditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:autoText="false"
+                    android:ems="10"
+                    android:freezesText="false"
+                    android:inputType="textPersonName"
+                    android:textAllCaps="false"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/black"
+                android:text="Número de Electrodomésticos"
+                android:textColor="@android:color/background_light"
+                android:visibility="gone"
+
+                app:fontFamily="monospace" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+
+                android:visibility="gone">
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.9"
+
+                    android:gravity="center_vertical"
+                    android:text="Televisores"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="11sp" />
+
+                <Spinner
+
+
+                    android:id="@+id/spnTelevisores"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.6"
+                    android:alpha="0.25"
+                    android:background="@color/cardview_light_background" />
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:gravity="center_vertical"
+                    android:text="Teléfonos"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="11sp" />
+
+                <Spinner
+
+
+                    android:id="@+id/spnTelefonos"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.6"
+                    android:alpha="0.25"
+                    android:background="@color/cardview_light_background" />
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="Refrigeradoras"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="11sp" />
+
+                <Spinner
+
+
+                    android:id="@+id/spnRefrigeradoras"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.6"
+                    android:alpha="0.25"
+                    android:background="@color/cardview_light_background" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+
+                android:visibility="gone">
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:gravity="center_vertical"
+                    android:text="Lavadoras"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="11sp" />
+
+                <Spinner
+
+
+                    android:id="@+id/spnLavadoras"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.6"
+                    android:alpha="0.25"
+                    android:background="@color/cardview_light_background" />
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:gravity="center_vertical"
+                    android:text="Computadoras"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="11sp" />
+
+                <Spinner
+
+
+                    android:id="@+id/spnComputadoras"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.6"
+                    android:alpha="0.25"
+                    android:background="@color/cardview_light_background" />
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:gravity="center_vertical"
+                    android:text="Aspiradoras / Lustradoras"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="11sp" />
+
+                <Spinner
+
+
+                    android:id="@+id/spnAspiradoras"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.6"
+                    android:alpha="0.25"
+                    android:background="@color/cardview_light_background" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+
+                android:visibility="gone">
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:gravity="center_vertical"
+                    android:text="Cocinas a Gas"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="11sp" />
+
+                <Spinner
+
+
+                    android:id="@+id/spnCocinasGas"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.6"
+                    android:alpha="0.25"
+                    android:background="@color/cardview_light_background" />
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:gravity="center_vertical"
+                    android:text="Cocinas Eléctricas"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="11sp" />
+
+                <Spinner
+
+
+                    android:id="@+id/spnCocinasElectricas"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.6"
+                    android:alpha="0.25"
+                    android:background="@color/cardview_light_background" />
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:gravity="center_vertical"
+                    android:text="Microondas"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="11sp" />
+
+                <Spinner
+
+
+                    android:id="@+id/spnMicroondas"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.6"
+                    android:alpha="0.25"
+                    android:background="@color/cardview_light_background" />
+
+
+            </LinearLayout>
+
+
+            -->  <!-- cambio 4 -->
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/black"
+                android:text="Información 2: Características de la Vivienda"
+                android:textColor="@android:color/background_light"
+                app:fontFamily="monospace" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1.75"
+
+                    android:text="Q5d Material pred. paredes exteriores"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp" />
+
+                <Spinner
+
+
+                    android:id="@+id/spnMaterialParedes"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="2"
+                    android:alpha="0.25"
+                    android:background="@color/cardview_light_background" />
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="Q5e Material pred. Pisos"
+
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp" />
+
+                <Spinner
+
+                    android:id="@+id/spnMaterialPisos"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="2"
+                    android:alpha="0.25"
+                    android:background="@color/cardview_light_background" />
+
+
+            </LinearLayout>
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1.75"
+
+                    android:text="Otro material paredes ¿Cuál?"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp" />
+
+
+                <EditText
+
+
+                    android:id="@+id/txtOtroMaterialParedes"
+                    style="@style/Widget.AppCompat.EditText"
+
+                    android:layout_width="0dp"
+
+
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:autoText="false"
+                    android:inputType="textPersonName"
+                    android:textAllCaps="false"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="12sp" />
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1.5"
+
+                    android:text="Otro material pisos ¿Cuál?"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp" />
+
+
+                <EditText
+
+
+                    android:id="@+id/txtOtroMaterialPisos"
+                    style="@style/Widget.AppCompat.EditText"
+
+                    android:layout_width="0dp"
+
+
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:autoText="false"
+                    android:inputType="textPersonName"
+                    android:textAllCaps="false"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="12sp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.75"
+
+                    android:text="Q5f Tipo de Alumbrado"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp" />
+
+                <Spinner
+
+
+                    android:id="@+id/spnTipoAlumbrado"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="2"
+                    android:alpha="0.25"
+                    android:background="@color/cardview_light_background" />
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="Q5g Tipo de abastecimiento de Agua"
+
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp" />
+
+
+                <Spinner
+
+
+                    android:id="@+id/spnAbastecimientoAgua"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="2"
+                    android:alpha="0.25"
+                    android:background="@color/cardview_light_background" />
+
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1.75"
+
+                    android:text="Otro tipo de alumbrado ¿Cuál?"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp" />
+
+
+                <EditText
+
+
+                    android:id="@+id/txtOtroTipoAlumbrado"
+
+                    style="@style/Widget.AppCompat.EditText"
+
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:autoText="false"
+                    android:inputType="textPersonName"
+                    android:textAllCaps="false"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="12sp" />
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1.5"
+
+                    android:text="Otro tipo de abastecimiento de agua ¿Cuál?"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp" />
+
+
+                <EditText
+
+
+                    android:id="@+id/txtOtroTipoAbastecimientoAgua"
+
+                    style="@style/Widget.AppCompat.EditText"
+
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:autoText="false"
+                    android:inputType="textPersonName"
+                    android:textAllCaps="false"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="12sp" />
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp">
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:text="Q5h Servicios higiénicos conectados a:"
+
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp" />
+
+
+                <Spinner
+
+
+                    android:id="@+id/spnServiciosHigienicos"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="2"
+                    android:alpha="0.25"
+                    android:background="@color/cardview_light_background" />
+
+
+            </LinearLayout>
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1.2"
+
+                    android:text="Otro tipo de Servicios Higiénicos ¿Cuál?"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp" />
+
+
+                <EditText
+
+
+                    android:id="@+id/txtOtroTipoServiciosHigienicos"
+                    style="@style/Widget.AppCompat.EditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:autoText="false"
+                    android:inputType="textPersonName"
+                    android:textAllCaps="false"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="12sp" />
+
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@android:color/black"
+                android:text="Información Adicional"
+                android:textColor="@android:color/background_light"
+                app:fontFamily="monospace" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Notas"
+
+                    android:textColor="@android:color/background_light" />
+
+                <EditText
+                    android:id="@+id/txtNotas"
+                    style="@style/Widget.AppCompat.EditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:autoText="false"
+                    android:ems="10"
+                    android:freezesText="false"
+                    android:inputType="textPersonName"
+                    android:textAllCaps="false"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp">
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:text="Status de la Encuesta"
+
+                    android:textColor="@android:color/background_light"
+                    android:textSize="14sp" />
+
+
+                <Spinner
+
+
+                    android:id="@+id/spnStatusEncuestas"
+                    android:layout_width="0dp"
+
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="2"
+                    android:alpha="0.25"
+                    android:background="@color/cardview_light_background" />
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/black"
+                android:text="Información Personal"
+                android:textColor="@android:color/background_light"
+                app:fontFamily="monospace" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:text="Crear un registro por cada persona que viva habitualmente en el hogar. No crear registros de más."
+                    android:textColor="@android:color/background_light"
+                    android:textSize="10dp"
+                    app:fontFamily="monospace" />
+
+
+                <Button
+                    android:id="@+id/btnCrearPersona"
+                    style="@android:style/Widget.Holo.Button.Small"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:text="Registrar Persona" />
+
+            </LinearLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+
+                android:id="@+id/recPersona"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/black"
+        android:gravity="center_vertical|center_horizontal">
+
+        <Button
+            android:id="@+id/btnGuardarEncuesta1"
+            style="@android:style/Widget.Holo.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Guardar Encuesta" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

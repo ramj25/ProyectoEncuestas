@@ -1,0 +1,1723 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PantallaEncuesta1_Viaje"
+    android:orientation="vertical"
+
+    android:descendantFocusability="beforeDescendants"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="8"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/texture"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/black"
+            android:text="Información de Viajes"
+            android:textColor="@android:color/background_light"
+            android:textSize="15sp"
+            app:fontFamily="monospace" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+
+
+
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Mes del Viaje"
+
+                android:textColor="@android:color/background_light" />
+
+            <Spinner
+
+                android:id="@+id/spnMesViaje"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="0.4"
+                android:alpha="0.25"
+                android:background="@color/cardview_light_background" />
+
+
+
+
+
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Dia del Viaje"
+
+                android:textColor="@android:color/background_light" />
+
+            <Spinner
+
+
+                android:id="@+id/spnDiaViaje"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0.4"
+                android:alpha="0.25"
+                android:background="@color/cardview_light_background" />
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/black"
+            android:text="Q17 Origen del Viaje"
+            android:textColor="@android:color/background_light"
+            android:textSize="15sp"
+            app:fontFamily="monospace" />
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+
+            <Button
+
+
+                android:id="@+id/btnCopiar"
+                style="@android:style/Widget.Holo.Button.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10px"
+                android:paddingRight="10px"
+                android:text="Copiar direccion del destino del ultimo viaje" />
+
+
+        </LinearLayout>
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Distrito"
+
+                android:textColor="@android:color/background_light"
+                android:textSize="12sp" />
+
+            <Spinner
+
+                android:id="@+id/spnDistritoOrigenViaje"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="5dp"
+
+                android:layout_weight="1.5"
+                android:alpha="0.25"
+                android:background="@color/cardview_light_background" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Dirección Origen"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtDireccionOrigenViaje"
+                style="@style/Widget.AppCompat.EditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autoText="false"
+                android:ems="10"
+                android:freezesText="false"
+                android:inputType="textPersonName"
+                android:textAllCaps="false"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Lugar de Referencia"
+                android:textColor="@android:color/background_light"
+                android:textSize="12dp" />
+
+            <EditText
+                android:id="@+id/txtReferenciaOrigenViaje"
+                style="@style/Widget.AppCompat.EditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autoText="false"
+                android:ems="10"
+                android:freezesText="false"
+                android:inputType="textPersonName"
+                android:textAllCaps="false"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+
+            <Button
+
+                android:id="@+id/btnCoordenadasOrigen"
+                style="@android:style/Widget.Holo.Button.Small"
+                android:layout_width="174dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15px"
+                android:paddingRight="15px"
+                android:text="Buscar Lugar en el Mapa" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:id="@+id/lblCoordenadasOrigen"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/background_light"
+                android:textSize="12dp" />
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+
+            android:visibility="gone">
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Zona de Tránsito"
+                android:textColor="@android:color/background_light"
+                android:textSize="12dp" />
+
+
+            <Spinner
+
+                android:id="@+id/spnZonaTransitoOrigen"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="5dp"
+
+                android:layout_weight="1.5"
+                android:alpha="0.25"
+                android:background="@color/cardview_light_background" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/black"
+            android:text="Q18 Lugar de Origen"
+            android:textColor="@android:color/background_light"
+            android:textSize="15sp"
+            app:fontFamily="monospace" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Lugar de Origen"
+                android:textColor="@android:color/background_light"
+                android:textSize="12dp" />
+
+
+            <Spinner
+
+                android:id="@+id/spnLugarOrigen"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="5dp"
+
+                android:layout_weight="1.5"
+                android:alpha="0.25"
+                android:background="@color/cardview_light_background" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/black"
+            android:text="Q19 Hora de Salida (Formato hora militar)"
+            android:textColor="@android:color/background_light"
+            android:textSize="15sp"
+            app:fontFamily="monospace" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="Hora"
+
+                android:textColor="@android:color/background_light"
+                android:textSize="12sp" />
+
+            <Spinner
+
+
+                android:id="@+id/spnHoraSalidaViaje"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+
+                android:layout_weight="1"
+                android:alpha="0.25"
+                android:background="@color/cardview_light_background" />
+
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="Minuto"
+
+                android:textColor="@android:color/background_light"
+                android:textSize="12sp" />
+
+            <Spinner
+
+                android:id="@+id/spnMinutoSalidaViaje"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="5dp"
+
+                android:layout_weight="1"
+                android:alpha="0.25"
+                android:background="@color/cardview_light_background" />
+
+
+            <!-- cambio 7 -->
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="AM o PM"
+
+                android:textColor="@android:color/background_light"
+                android:textSize="12sp"
+
+                android:visibility="gone" />
+
+            <Spinner
+
+
+                android:id="@+id/spnAmopmOrigen"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+
+                android:layout_weight="1"
+                android:alpha="0.25"
+                android:background="@color/cardview_light_background"
+
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/black"
+            android:text="Q20 Destino del Viaje"
+            android:textColor="@android:color/background_light"
+            android:textSize="14sp"
+            app:fontFamily="monospace" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Distrito"
+
+                android:textColor="@android:color/background_light"
+                android:textSize="12sp" />
+
+            <Spinner
+
+                android:id="@+id/spnDistritoDestinoViaje"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="5dp"
+
+                android:layout_weight="1.5"
+                android:alpha="0.25"
+                android:background="@color/cardview_light_background" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Dirección Destino"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtDireccionDestinoViaje"
+                style="@style/Widget.AppCompat.EditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autoText="false"
+                android:ems="10"
+                android:freezesText="false"
+                android:inputType="textPersonName"
+                android:textAllCaps="false"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Lugar de Referencia"
+                android:textColor="@android:color/background_light"
+                android:textSize="12dp" />
+
+            <EditText
+                android:id="@+id/txtReferenciaDestinoViaje"
+                style="@style/Widget.AppCompat.EditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autoText="false"
+                android:ems="10"
+                android:freezesText="false"
+                android:inputType="textPersonName"
+                android:textAllCaps="false"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+
+            <Button
+
+                android:id="@+id/btnCoordenadasDestino"
+                style="@android:style/Widget.Holo.Button.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buscar Lugar en el Mapa" />
+
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+
+
+                android:id="@+id/lblCoordenadasDestino"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/background_light"
+                android:textSize="12dp" />
+
+
+        </LinearLayout>
+
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/black"
+            android:text="Q21 Lugar de Destino"
+            android:textColor="@android:color/background_light"
+            android:textSize="15sp"
+            app:fontFamily="monospace" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+
+            android:visibility="gone">
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Zona de Tránsito"
+                android:textColor="@android:color/background_light"
+                android:textSize="12dp" />
+
+
+            <Spinner
+
+                android:id="@+id/spnZonaTransitoDestino"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="5dp"
+
+                android:layout_weight="1.5"
+                android:alpha="0.25"
+                android:background="@color/cardview_light_background" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Lugar de Destino"
+                android:textColor="@android:color/background_light"
+                android:textSize="12dp" />
+
+
+            <Spinner
+
+                android:id="@+id/spnLugarDestino"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="5dp"
+
+                android:layout_weight="1.5"
+                android:alpha="0.25"
+                android:background="@color/cardview_light_background" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/black"
+            android:text="Q22 Hora de llegada (Formato hora militar)"
+            android:textColor="@android:color/background_light"
+            android:textSize="15sp"
+            app:fontFamily="monospace" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="Hora"
+
+                android:textColor="@android:color/background_light"
+                android:textSize="12sp" />
+
+            <Spinner
+
+
+                android:id="@+id/spnHoraLlegadaViaje"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+
+                android:layout_weight="1"
+                android:alpha="0.25"
+                android:background="@color/cardview_light_background" />
+
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.75"
+                android:text="Minuto"
+
+                android:textColor="@android:color/background_light"
+                android:textSize="12sp" />
+
+            <Spinner
+
+                android:id="@+id/spnMinutoLlegadaViaje"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="5dp"
+
+                android:layout_weight="1"
+                android:alpha="0.25"
+                android:background="@color/cardview_light_background" />
+
+
+            <!-- cambio 8 -->
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="AM o PM"
+
+                android:textColor="@android:color/background_light"
+                android:textSize="12sp"
+
+                android:visibility="gone" />
+
+            <Spinner
+
+
+                android:id="@+id/spnAmopmDestino"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+
+                android:layout_weight="1"
+                android:alpha="0.25"
+                android:background="@color/cardview_light_background"
+
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/black"
+            android:text="Q23 Propósito del viaje"
+            android:textColor="@android:color/background_light"
+            android:textSize="15sp"
+            app:fontFamily="monospace" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Propósito del Viaje"
+
+                android:textColor="@android:color/background_light"
+                android:textSize="12sp" />
+
+            <Spinner
+
+                android:id="@+id/spnPropositoViaje"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="5dp"
+
+                android:layout_weight="1.5"
+                android:alpha="0.25"
+                android:background="@color/cardview_light_background" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/black"
+            android:text="Q24 Medio de transporte"
+            android:textColor="@android:color/background_light"
+            android:textSize="14sp"
+            app:fontFamily="monospace" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="Crear registros de cada tramo del viaje del usuario con los respectivos datos solicitados. No crear registros de más."
+                android:textColor="@android:color/background_light"
+                android:textSize="10dp"
+                app:fontFamily="monospace" />
+
+
+            <Button
+                android:id="@+id/btnCrearTramoViaje"
+                style="@android:style/Widget.Holo.Button.Small"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:text="Registrar Tramo" />
+
+        </LinearLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+
+            android:id="@+id/recTramoViaje"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/black"
+            android:text="Detalles del Viaje"
+            android:textColor="@android:color/background_light"
+            android:textSize="14sp"
+            app:fontFamily="monospace" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+
+                android:text="Q25 ¿Manejó Ud. el auto en que viajó?"
+                android:textColor="@android:color/background_light"
+                android:textSize="12sp" />
+
+            <Spinner
+
+
+                android:id="@+id/spnManejoCarro"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.5"
+                android:alpha="0.25"
+                android:background="@color/cardview_light_background" />
+
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Q26a Lugar Estacionamiento"
+
+                android:textColor="@android:color/background_light"
+                android:textSize="12sp" />
+
+            <Spinner
+
+                android:id="@+id/spnLugarEstacionamiento"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:alpha="0.25"
+                android:background="@color/cardview_light_background" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="0.7"
+
+                android:text="Q26b Pago Estacionamiento"
+                android:textColor="@android:color/background_light"
+                android:textSize="12sp" />
+
+            <Spinner
+
+
+                android:id="@+id/spnPagoEstacionamiento"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.8"
+                android:alpha="0.25"
+                android:background="@color/cardview_light_background" />
+
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.95"
+                android:text="Q26c Tarifa Soles Estacionamiento aprox."
+
+                android:textColor="@android:color/background_light"
+                android:textSize="12sp" />
+
+            <Spinner
+
+                android:id="@+id/spnTarifaEstacionamiento"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.4"
+                android:alpha="0.25"
+                android:background="@color/cardview_light_background" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.95"
+                android:text="Q26d ¿Cuánto pagó por el peaje durante su viaje?"
+
+                android:textColor="@android:color/background_light"
+                android:textSize="12sp" />
+
+            <Spinner
+
+
+                android:id="@+id/spnPeajesViaje"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:layout_weight="0.45"
+                android:alpha="0.25"
+                android:background="@color/cardview_light_background" />
+
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.95"
+                android:text="Q26e ¿Con qué frecuencia realiza este mismo viaje?"
+
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="12sp" />
+
+            <Spinner
+
+
+                android:id="@+id/spnFrecuenciaViaje"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0.85"
+                android:alpha="0.25"
+                android:background="@color/cardview_light_background" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Si eligió otra frecuencia (Especificar)"
+                android:textColor="@android:color/background_light"
+                android:textSize="12sp" />
+
+            <EditText
+
+
+                android:id="@+id/txtOtraFrecuencia"
+                style="@style/Widget.AppCompat.EditText"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:autoText="false"
+                android:ems="10"
+                android:freezesText="false"
+                android:inputType="textPersonName"
+                android:textAllCaps="false"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/black"
+            android:text="Información adicional - Para todos excepto los que solo viajan caminando, en trailer o camión"
+            android:textColor="@android:color/background_light"
+            android:textSize="14sp"
+            app:fontFamily="monospace" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+
+                android:text="Q27 ¿Considera este su viaje mas largo?"
+                android:textColor="@android:color/background_light"
+                android:textSize="12sp" />
+
+            <Spinner
+
+
+                android:id="@+id/spnViajeMasLargo"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.5"
+                android:alpha="0.25"
+                android:background="@color/cardview_light_background" />
+
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Q28 Medio"
+
+                android:textColor="@android:color/background_light"
+                android:textSize="12sp" />
+
+            <Spinner
+
+                android:id="@+id/spnMedioTrans"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:alpha="0.25"
+                android:background="@color/cardview_light_background" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+
+                android:text="Q29 ¿Porqué razón eligió viajar en el medio?"
+                android:textColor="@android:color/background_light"
+                android:textSize="12sp" />
+
+            <Spinner
+
+                android:id="@+id/spnRazonMedioTransporte"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="5dp"
+
+                android:layout_weight="1.5"
+                android:alpha="0.25"
+                android:background="@color/cardview_light_background" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Q30 Solo para los que no usan transporte público: ¿Porque no usa el transporte público?"
+
+                android:textColor="@android:color/background_light"
+                android:textSize="12sp" />
+
+            <Spinner
+
+                android:id="@+id/spnPorqueNoUtiliza"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+
+                android:layout_marginRight="5dp"
+                android:layout_weight="1.5"
+                android:alpha="0.25"
+                android:background="@color/cardview_light_background" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="20dp"
+            android:text="“La Información Adicional solicitada a continuación nos permitirá conformar una base de datos para recabar información sobre sus viajes, a fin de dar continuidad a las mejoras en los sistemas de transporte de la ciudad.”
+Los datos personales son recopilados para los fines expuestos previamente y no se extenderá a otra finalidad que haya 	sido la establecida de manera inequívoca como tal al momento de la recopilación.
+El dato que le voy a solicitar a continuación (número de celular), implica el consentimiento expreso del titular de la inclusión de este dato en muestro sistemas y banco de datos.
+El tratamiento y protección de estos datos se realiza conforme con lo expuesto en la Ley No 29733, Ley de Protección de Datos Personales, su Reglamento y Directiva de Seguridad.
+¿Está de acuerdo en proporcionarme el dato solicitado?
+¿Podría indicarme su número de celular?"
+            android:textColor="@android:color/background_light"
+            android:textSize="10dp"
+            app:fontFamily="monospace" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Q31 ¿Da su consentimiento?"
+
+                android:textColor="@android:color/background_light"
+                android:textSize="10sp" />
+
+            <Spinner
+
+
+                android:id="@+id/spnConsentimiento"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.5"
+                android:alpha="0.25"
+                android:background="@color/cardview_light_background" />
+
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:text="Q32 Número de Celular"
+                android:textColor="@android:color/background_light"
+                android:textSize="12sp" />
+
+            <EditText
+
+
+                android:id="@+id/txtNumeroCelular"
+
+                style="@style/Widget.AppCompat.EditText"
+
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:autoText="false"
+                android:inputType="textPersonName"
+                android:textAllCaps="false"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+
+        <!-- cambio 9 de aca esta el final!! -->
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/black"
+            android:text="Solo para usuarios de carro,taxi,colectivo, combi, microbús u ómnibus"
+            android:textColor="@android:color/background_light"
+            android:textSize="14sp"
+            android:visibility="gone"
+
+            app:fontFamily="monospace" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+
+            android:visibility="gone">
+
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="¿Porque no usa transporte público? (Si no lo usa)"
+
+                android:textColor="@android:color/background_light"
+                android:textSize="12sp" />
+
+            <Spinner
+
+                android:id="@+id/spnPorqueNoTransportePublico"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="5dp"
+
+                android:layout_weight="1.5"
+                android:alpha="0.25"
+                android:background="@color/cardview_light_background" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/black"
+            android:text="Solo para usuarios de bus, microbus o combi"
+            android:textColor="@android:color/background_light"
+            android:textSize="14sp"
+            android:visibility="gone"
+
+            app:fontFamily="monospace" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+
+            android:visibility="gone">
+
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.75"
+                android:text="Dist. al paradero (metros)"
+
+                android:textColor="@android:color/background_light"
+                android:textSize="12sp" />
+
+            <Spinner
+
+
+                android:id="@+id/spnDistanciaParadero1"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+
+                android:layout_weight="1"
+                android:alpha="0.25"
+                android:background="@color/cardview_light_background" />
+
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Tiempo Viaje (mins)"
+
+                android:textColor="@android:color/background_light"
+                android:textSize="12sp" />
+
+            <Spinner
+
+                android:id="@+id/spnTiempoViaje1"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="5dp"
+
+                android:layout_weight="0.6"
+                android:alpha="0.25"
+                android:background="@color/cardview_light_background" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+
+            android:visibility="gone">
+
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:text="Tarifa (soles)"
+
+                android:textColor="@android:color/background_light"
+                android:textSize="12sp" />
+
+            <Spinner
+
+
+                android:id="@+id/spnTarifa1"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+
+                android:layout_weight="0.75"
+                android:alpha="0.25"
+                android:background="@color/cardview_light_background" />
+
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Número transbordos"
+
+                android:textColor="@android:color/background_light"
+                android:textSize="12sp" />
+
+            <Spinner
+
+
+                android:id="@+id/spnNumeroTransbordos1"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+
+                android:layout_weight="0.75"
+                android:alpha="0.25"
+                android:background="@color/cardview_light_background" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/black"
+            android:text="Solo para usuarios de taxi o colectivo"
+            android:textColor="@android:color/background_light"
+            android:textSize="14sp"
+            android:visibility="gone"
+
+            app:fontFamily="monospace" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+
+            android:visibility="gone">
+
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:text="Distancia (mts)"
+                android:textColor="@android:color/background_light"
+                android:textSize="12sp" />
+
+            <Spinner
+
+
+                android:id="@+id/spnDistanciaParadero2"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+
+                android:layout_weight="1.1"
+                android:alpha="0.25"
+                android:background="@color/cardview_light_background" />
+
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Tiempo Viaje"
+
+                android:textColor="@android:color/background_light"
+                android:textSize="12sp" />
+
+            <Spinner
+
+                android:id="@+id/spnTiempoViaje2"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="5dp"
+
+                android:layout_weight="0.75"
+                android:alpha="0.25"
+                android:background="@color/cardview_light_background" />
+
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:text="Tarifa"
+
+                android:textColor="@android:color/background_light"
+                android:textSize="12sp" />
+
+            <Spinner
+
+
+                android:id="@+id/spnTarifa2"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+
+                android:layout_weight="0.75"
+                android:alpha="0.25"
+                android:background="@color/cardview_light_background" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/black"
+            android:text="Solo para usuarios de carros particulares"
+            android:textColor="@android:color/background_light"
+            android:textSize="14sp"
+            android:visibility="gone"
+
+            app:fontFamily="monospace" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+
+            android:visibility="gone">
+
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:text="Tiempo Viaje"
+
+                android:textColor="@android:color/background_light"
+                android:textSize="12sp" />
+
+            <Spinner
+
+
+                android:id="@+id/spnTiempoViaje3"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+
+                android:layout_weight="1.25"
+                android:alpha="0.25"
+                android:background="@color/cardview_light_background" />
+
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Costo Viaje"
+
+                android:textColor="@android:color/background_light"
+                android:textSize="12sp" />
+
+            <Spinner
+
+                android:id="@+id/spnCostoViaje3"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="5dp"
+
+                android:layout_weight="0.6"
+                android:alpha="0.25"
+                android:background="@color/cardview_light_background" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+
+            android:visibility="gone">
+
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:text="Peaje (Aprox.) "
+
+                android:textColor="@android:color/background_light"
+                android:textSize="12sp" />
+
+            <Spinner
+
+
+                android:id="@+id/spnPeaje3"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+
+                android:layout_weight="0.75"
+                android:alpha="0.25"
+                android:background="@color/cardview_light_background" />
+
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Estacionamiento"
+
+                android:textColor="@android:color/background_light"
+                android:textSize="12sp" />
+
+            <Spinner
+
+
+                android:id="@+id/spnEstacionamiento3"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+
+                android:layout_weight="0.75"
+                android:alpha="0.25"
+                android:background="@color/cardview_light_background" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/black"
+        android:gravity="center_vertical|center_horizontal">
+
+        <Button
+            android:id="@+id/btnGuardarViaje"
+            style="@android:style/Widget.Holo.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:paddingLeft="15px"
+            android:paddingRight="15px"
+            android:text="Añadir Viaje" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

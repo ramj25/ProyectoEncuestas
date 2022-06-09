@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".PantallaEncuesta6">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bckg5"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/black"
+                android:text="Encuesta 6"
+                android:textColor="@android:color/background_light"
+                android:textSize="16sp"
+                app:fontFamily="monospace" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Número de Hogar"
+                    android:textColor="@android:color/background_light" />
+
+                <EditText
+                    android:id="@+id/txtNumHogar"
+                    style="@style/Widget.AppCompat.EditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:autoText="false"
+                    android:ems="10"
+                    android:freezesText="false"
+                    android:inputType="textPersonName"
+                    android:textAllCaps="false"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Dirección"
+                    android:textColor="@android:color/background_light" />
+
+                <EditText
+                    android:id="@+id/txtDireccionHogar"
+                    style="@style/Widget.AppCompat.EditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:autoText="false"
+                    android:ems="10"
+                    android:freezesText="false"
+                    android:inputType="textPersonName"
+                    android:textAllCaps="false"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.45"
+                    android:text="Tel/Cel"
+
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp" />
+
+
+                <EditText
+
+                    android:id="@+id/txtTeleCel"
+                    style="@style/Widget.AppCompat.EditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="0.8"
+
+
+                    android:autoText="false"
+                    android:inputType="textPersonName"
+                    android:textAllCaps="false"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="14sp" />
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Nivel Socioeconomico"
+
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp" />
+
+                <Spinner
+
+
+                    android:id="@+id/spnNivelSE"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+
+                    android:layout_weight="0.5"
+                    android:alpha="0.25"
+                    android:background="@color/cardview_light_background" />
+
+
+
+            </LinearLayout>
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/black"
+                android:text="Hombres:"
+                android:textColor="@android:color/background_light"
+                app:fontFamily="monospace" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Menores de 6 Años"
+
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp" />
+
+
+                <Spinner
+
+
+                    android:id="@+id/spnHombresMenores"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:alpha="0.25"
+                    android:background="@color/cardview_light_background" />
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Mayores de 6 Años"
+
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp" />
+
+
+
+                <Spinner
+
+
+                    android:id="@+id/spnHombresMayores"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:alpha="0.25"
+                    android:background="@color/cardview_light_background" />
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:text="Empleados del Hogar"
+
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp" />
+
+                <Spinner
+
+
+                    android:id="@+id/spnHombresEmpleados"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:alpha="0.25"
+                    android:background="@color/cardview_light_background" />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/black"
+                android:text="Mujeres:"
+                android:textColor="@android:color/background_light"
+                app:fontFamily="monospace" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Menores de 6 Años"
+
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp" />
+
+                <Spinner
+
+
+                    android:id="@+id/spnMujeresMenores"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:alpha="0.25"
+                    android:background="@color/cardview_light_background" />
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Mayores de 6 Años"
+
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp" />
+
+                <Spinner
+
+
+                    android:id="@+id/spnMujeresMayores"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:alpha="0.25"
+                    android:background="@color/cardview_light_background" />
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:text="Empleadas del Hogar"
+
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp" />
+
+                <Spinner
+
+
+                    android:id="@+id/spnMujeresEmpleadas"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:alpha="0.25"
+                    android:background="@color/cardview_light_background" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_gravity="start"
+                    android:layout_weight="0.45"
+                    android:text="Zona Tránsito"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp" />
+
+
+                <EditText
+
+                    android:id="@+id/txtZonaTransito"
+                    style="@style/Widget.AppCompat.EditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="0.8"
+
+
+                    android:autoText="false"
+                    android:inputType="textPersonName"
+                    android:textAllCaps="false"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="14sp" />
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.75"
+                    android:text="Tipo Propiedad"
+
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp" />
+
+                <Spinner
+
+
+                    android:id="@+id/spnTipoPropiedad"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+
+                    android:layout_weight="1"
+                    android:alpha="0.25"
+                    android:background="@color/cardview_light_background" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="0.75"
+                    android:text="Tipo Construcción"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp" />
+
+                <Spinner
+
+
+                    android:id="@+id/spnTipoConstruccion"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+
+                    android:layout_gravity="bottom"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:alpha="0.25"
+                    android:background="@color/cardview_light_background" />
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+
+                    android:layout_weight="1"
+                    android:text="Num. Habitaciones"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp" />
+
+                <Spinner
+
+                    android:id="@+id/spnNumeroHabitaciones"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="bottom"
+
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="0.5"
+                    android:alpha="0.25"
+                    android:background="@color/cardview_light_background" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="0.75"
+                    android:text="Ingreso Hogar (Mes)"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp" />
+
+                <Spinner
+
+
+                    android:id="@+id/spnIngresoHogar"
+                    android:layout_width="0dp"
+
+                    android:layout_height="20dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.7"
+                    android:alpha="0.25"
+                    android:background="@color/cardview_light_background" />
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+
+                    android:layout_weight="1"
+                    android:text="Nivel Educación Jefe Familia"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp" />
+
+                <Spinner
+
+                    android:id="@+id/spnNivelEducacionJefe"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="bottom"
+
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1.2"
+                    android:alpha="0.25"
+                    android:background="@color/cardview_light_background" />
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
